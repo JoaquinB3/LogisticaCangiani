@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*header top*/
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FE6847;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .contacto p {
+    margin:0px 20px;
+    font-size: 0.8em;
+  }
+  
+  .contacto a {
+    color: #333;
+    text-decoration: none;
+    justify-content: center;
+  }
+  
+  .redes {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .fa-brands{
+    width: 40px;
+    height: 100%;
+    font-size: 20px;
+  }
+
+  .fa-brands:hover{
+    width: 40px;
+    height: 100%;
+    align-items: center;
+    font-size: 20px;
+    color: #EBDCCB;
+  }
+
+  .boton-top{
+    width: 200px;
+    border-left: solid #333 1px;
+  }
+
+  .boton-top:hover{
+    width: 200px;
+    border-left: solid #333 1px;
+    color: #EBDCCB;
+  }
+
+/*header down*/
+
+.menu {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.logo {
+    margin:0px 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.logo img{
+  width: 150px;
+}
+
+.container-header-down {
+    width: 75%;
+    height: 100%;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #363946;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+}
+
+.container-etiqueta{
+    display: flex;
+    height: 100%;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-etiqueta:hover{
+    display: flex;
+    height: 100%;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    transition: 1.3s;
+}
+
+.etiqueta {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Portada*/
+
+.title1{
+  width: 100%;
+  text-align: start;
+  padding: 25px;
+  color: #2c2c2c;
+  font-size: 18px;
+  position: relative;
+}
+
+.title1::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 35%;
+  height: 1.5px;
+  background-color: #FE6847;
+}
+
+.container-portada{
+  background-image: url('img/portada.jpeg');
+  height: calc(100vh - 103px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.container-content-portada{
+    width: 35%;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.container-content-portada h1{
+  font-size: 4.7em;
+  color: #fff;
+  text-decoration: none;
+  padding: 33px;
+  padding-bottom: 18px;
+}
+
+.container-content-portada p{
+  font-size: 1.5em;
+  color: #fff;
+  padding: 33px;
+  padding-top: 0;
+}
+
+/*Tarjetas*/
+
+.slick-next:before, .slick-prev:before {
+  color: #000000  !important;
+}
+
+.cards__container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card{ 
+  margin: 40px 20px;
+  height: 500px !important;
+  box-shadow: 5px 10px 16px 0px rgba(117,117,117,0.75);
+  -webkit-box-shadow: 5px 10px 16px 0px rgba(117,117,117,0.75);
+  -moz-box-shadow: 5px 10px 16px 0px rgba(117,117,117,0.75);
+  border-radius: 3px;
+}
+.card-detail{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+}
+.card__title{
+  height: 70px;
+}
+
+.card__text{
+  height: 120px
+}
+.img-container{
+  overflow: hidden;
+  height: 45%;
+  width: 100%;
+}
+.img-card{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  transition: 300ms;
+}
+.img-card:hover{
+  transform: scale(1.2);
+  transition: 300ms;
+}
+
+/*Historia*/
+
+.title2{
+  width: 100%;
+  text-align: start;
+  padding: 25px;
+  color: #2c2c2c;
+  font-size: 20px;
+  position: relative;
+  background-color: #FE6847;
+}
+
+.title2::after{
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 35%;
+  height: 1.5px;
+  background-color: #EBDCCB;
+}
+
+.historia{
+    height: 400px;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.img-historia{
+    height: 300px;
+    width: 40%;
+    margin: 50px 0px 25px 50px;
+}
+
+.img-historia img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-historia{
+    height: 300px;
+    width: 60%;
+    margin: 50px 50px 50px 25px;
+    border-left: solid 1px #2c2c2c;
+}
+
+.interline{
+  padding: 15px;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+/*confianza*/
+
+.title3{
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  color: #2c2c2c;
+  font-size: 23px;
+  position: relative;
+}
+
+.title3::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  width: 30%;
+  height: 1.5px;
+  background-color: #FE6847;
+}
+
+.autoplay{
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slick-slide{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider-logo{
+  width: 180px; 
+  height: 100%;
+}
+
+.slider-logo img{
+  width: 70%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+/*Contacto*/
+
+.portada-contacto{
+  width: 100%;
+  height: 400px;
+  background-image: url("img/portada.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*mapa*/
+
+.map-container{
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*formulario*/
+.container-contacto{
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  background-image: url("img/Contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content{
+  display: flex;
+  justify-content: center;
+}
+
+.cartel-contacto{
+  width: 250px;
+  color: #fff;
+  background-color: #2c2c2c;
+  padding: 15px;
+}
+
+.cartel-contacto h1{
+  color: #FE6847;
+}
+
+.cartel-contacto h2{
+  padding: 15px 15px 15px 1px;
+  font-size: 18px;
+}
+
+.container-form{
+  width: 650px;
+  height: 100%;
+  margin: 0px 15px;
+  margin-top: 0;
+  background-color: transparent;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-nombre{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.container-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-complete{
+  width: 100%;
+  background-color: transparent;
+}
+
+.form-complete input{
+  width: 100%;
+  background-color: #2c2c2c;
+  padding: 10px;
+  border: none;
+  color: #EBDCCB;
+}
+
+.form-complete input:focus{
+  outline-style: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #2c2c2c inset;
+  -webkit-text-fill-color:  #EBDCCB;
+}
+
+
+.form-text{
+  width: 100%;
+  color: #EBDCCB;
+  background-color: #2c2c2c;
+}
+
+.form-text textarea{
+  width: 100%;
+  background-color: transparent;
+  color: #EBDCCB;
+  padding: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+} 
+
+.form-text textarea:focus{
+  outline-style: none;
+}
+
+.form-button{
+  width: 100%;
+  background-color: transparent;
+}
+
+.button-formulario{
+  width: 100%;
+  background-color: #FE6847;
+  padding: 8px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-formulario:hover{
+  background-color: #fd896e;
+}
+
+/*footer*/
+
+footer{
+  background-color: #222023;
+  background-image: -webkit-linear-gradient( top, #222023, #1e2c47 );
+  background-image: -moz-linear-gradient( top, #222023, #1e2c47 );
+  background-image: -o-linear-gradient( top, #222023, #1e2c47 );
+  background-image: linear-gradient( to bottom, #222023, #1e2c47 );
+  color: #EBDCCB;
+  padding:30px;
+  margin-top: 150px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-footer{
+  width: 90%;
+}
+
+.section-columns{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section{
+  flex: 1;
+  padding: 10px;
+  text-align: start;
+}
+
+.footer-bottom{
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #FE6847;
+  padding-top: 10px;
+}
+
+.footer-title{
+  width: 100%;
+  text-align: start;
+  color: #EBDCCB;
+  padding: 15px 0px 15px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #FE6847;
+}
+
+.footer-social{
+  list-style: none;
+  margin: 0; 
+  padding: 0px !important; 
+  display: flex;
+}
+
+.footer-social li{
+  padding: 0px 8px !important; 
+  margin: 0;
+}
+
+.fab:hover{
+  color: #FE6847;
+}
+
+.section ul{
+  padding-top: 25px;
+  list-style: none;
+}
+
+.section ul li{
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+  text-decoration: none;
+}
+
+.section ul li a{
+  color: #EBDCCB;
+  text-decoration: none;
+}
+
+.section ul li a:hover{
+  color: #FE6847;
+}
+
+.table td{
+  padding: 25px 10px 10px 10px;
+}
+
+.section h3{
+  padding-top: 15px;
+  color: #FE6847;
+}
+
+.section1-content{
+  margin: 0px 0px 30px 10px;
+}
+
+.footer-bottom a{
+  color: #646464;
+}
+
+.btn-footer{
+  background-color: #FE6847;
+  color: #2c2c2c;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.btn-footer:hover{
+  background-color: #612619;
+  color: #EBDCCB;
+}
+
+
+/*RESPONSIVE*/
+#hamburger-btn {
+  display: none;
+}
+/*Boton header*/
+
+@media (max-width: 768px) {
+  .container-header-down{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+    width: 100%;
+  }
+
+  #hamburger-btn {
+    display: block;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+  }
+  
+  /* Estilo para el botón hamburguesa en estado activo */
+  #hamburger-btn.active{
+    display: block;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+  }
+
+  #hamburger-btn.active > div {
+    background: #2c2c2c;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+  }
+  
+  #hamburger-btn.active div:first-child {
+    transform: rotate(45deg);
+  }
+  
+  #hamburger-btn.active:hover div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #hamburger-btn.active div:last-child {
+    transform: rotate(-45deg);
+  }
+}
+
