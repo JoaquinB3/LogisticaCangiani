@@ -608,6 +608,10 @@ footer{
     display: none;
   }
 
+  .contacto{
+    display: none;
+  }
+
   .menu{
     display: flex;
     width: 100%;
@@ -649,8 +653,51 @@ footer{
 .menu-responsive{
   display: none;
 }
+
 .menu-responsive-active{
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #2c2c2c;
+}
+
+.menu-responsive-active li{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  list-style-type: none;
+  border-bottom: solid 1.5px  #646464;
+}
+
+.menu-responsive-active a{
+  color: #EBDCCB;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-responsive-active a:after{
+  content: "";
+  position: absolute;
+  background-color: #FE6847;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.menu-responsive-active a:hover:after{
+  width: 100%;
+}
+
+.menu-responsive-active .r-s{
+  text-align: center;
+  padding: 8px;
+  background-color: #FE6847;
+}
+
+.menu-responsive-active .r-s a{
+  color: #2c2c2c;
 }
 
 @media screen and (min-width:768px) {
