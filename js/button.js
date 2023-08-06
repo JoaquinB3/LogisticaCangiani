@@ -1,28 +1,21 @@
-const breakpoint = 768;
+const button = document.getElementById("hamburger-btn");
+const menuResponsive = document.querySelector(".menu-responsive");
+console.log(menuResponsive);
 
-function addHamburgerButton() {
-  const menu = document.querySelector(".menu");
-  const hamburgerBtn = document.createElement("button");
-  hamburgerBtn.id = "hamburger-btn";
-  hamburgerBtn.innerHTML = "&#9776;";
-  menu.appendChild(hamburgerBtn);
-}
+let open = false;
 
-function removeHamburgerButton() {
-  const hamburgerBtn = document.getElementById("hamburger-btn");
-  if (hamburgerBtn) {
-    hamburgerBtn.remove();
+button.addEventListener("click",()=>{
+  open = !open;
+  if(open){
+    button.children[0].style.transform = "rotate(45deg)";
+    button.children[1].style.opacity = 0;
+    button.children[2].style.transform = "rotate(-45deg)";
+    menuResponsive.classList.add("menu-responsive-active");
+  }else{
+    button.children[0].style.transform = "rotate(0)";
+    button.children[1].style.opacity = 1;
+    button.children[2].style.transform = "rotate(0)";
+    menuResponsive.classList.remove("menu-responsive-active");
   }
-}
-
-function checkWindowSize() {
-  if (window.innerWidth <= breakpoint) {
-    addHamburgerButton();
-  } else {
-    removeHamburgerButton();
-  }
-}
-
-window.addEventListener("load", checkWindowSize);
-window.addEventListener("resize", checkWindowSize);
+})
 
