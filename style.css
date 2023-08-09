@@ -270,12 +270,25 @@
     width: 60%;
     margin: 50px 50px 50px 25px;
     border-left: solid 1px #2c2c2c;
+    overflow-y: auto;
+}
+
+.texto-historia::-webkit-scrollbar{
+  width: 5px;
+  background: #646464;
+
+}
+
+.texto-historia::-webkit-scrollbar-thumb{
+  background: #FE6847;
 }
 
 .interline{
   padding: 15px;
   padding-left: 30px;
+  font-size: 13px;
   line-height: 1.5;
+  max-width: 100%;
 }
 
 /*confianza*/
@@ -643,7 +656,7 @@ footer{
 
   #hamburger-btn > div {
     background: #2c2c2c;
-    height: 2px;
+    height: 2.5px;
     width: 2.3rem;
     border-radius: 5px;
     transition: all .5s;
@@ -686,7 +699,7 @@ footer{
   transition: 0.3s;
 }
 
-.menu-responsive-active a:hover:after{
+.menu-responsive-active .text-menu-responsive:hover:after{
   width: 100%;
 }
 
