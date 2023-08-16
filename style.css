@@ -617,6 +617,7 @@ footer{
 /*Boton header*/
 
 @media screen and (max-width: 768px) {
+
   .container-header-down{
     display: none;
   }
@@ -662,6 +663,21 @@ footer{
     transition: all .5s;
     transform-origin: left;
   }
+
+  .section-columns{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+/*slides cards*/
+
+  .slick-track{
+    margin: 0;
+    width: 100%;
+  }
+  
+
 }
 .menu-responsive{
   display: none;
@@ -718,4 +734,5 @@ footer{
     display: none;
   }
 }
+
 
