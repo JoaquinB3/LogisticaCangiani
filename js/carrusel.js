@@ -3,6 +3,7 @@ $('.cards__carrusel').slick({
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -24,7 +25,8 @@ $('.cards__carrusel').slick({
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false
         }
       }
     ]

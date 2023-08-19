@@ -179,6 +179,7 @@
 
 .slick-next:before, .slick-prev:before {
   color: #000000  !important;
+  
 }
 
 .cards__container{
@@ -669,14 +670,32 @@ footer{
     flex-direction: column;
   }
 
-  
-/*slides cards*/
-
-  .slick-track{
-    margin: 0;
+  .container-content{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    padding: 15px;
   }
+
+  .title3{
+    font-size: 20px;
+  }
+
+  .container-content-portada{
+    display: flex;
+    margin: 10px;
+  }
+
+  .container-content-portada h1{
+    font-size: 40px;
+  }
+
+  .container-content-portada p{
+    display: none;
+  }
+
   
+
 
 }
 .menu-responsive{
@@ -734,5 +753,4 @@ footer{
     display: none;
   }
 }
-
 
