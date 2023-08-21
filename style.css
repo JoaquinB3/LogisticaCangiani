@@ -754,3 +754,9 @@ footer{
   }
 }
 
+@media screen and (max-width: 900px) {
+  .container-content-portada p{
+    display: none;
+  }
+}
+

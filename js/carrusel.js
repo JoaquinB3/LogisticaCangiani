@@ -18,7 +18,8 @@ $('.cards__carrusel').slick({
         breakpoint: 900,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          arrows: false
         }
       },
       {
