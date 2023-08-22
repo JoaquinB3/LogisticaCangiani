@@ -1,6 +1,5 @@
 const button = document.getElementById("hamburger-btn");
 const menuResponsive = document.querySelector(".menu-responsive");
-console.log(menuResponsive);
 
 let open = false;
 

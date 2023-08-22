@@ -154,6 +154,15 @@
   background-size: cover;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.container-portada::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.363);
+  z-index: 10;
 }
 
 .container-content-portada{
@@ -161,12 +170,6 @@
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(3px);
-    /*background: rgba(0, 0, 0, 0.6);*/
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 18px;
 }
 
 .container-content-portada h1{
@@ -175,13 +178,20 @@
   text-decoration: none;
   padding: 33px;
   padding-bottom: 18px;
+  z-index: 20;
 }
 
 .container-content-portada p{
   font-size: 1.5em;
   color: #fff;
-  padding: 33px;
-  padding-top: 0;
+  width: 70%;
+  margin-left:35px;
+  clip-path: polygon(0 0, 97% 0, 100% 100%, 0% 100%);
+  padding: 5px;
+  z-index: 20;
+  text-align: start;
+  background: rgba(254, 104, 71, 0.7);
+  border-radius: 2px 0px 0px 2px;
 }
 
 /*Tarjetas*/
@@ -690,6 +700,10 @@ footer{
     font-size: 20px;
   }
 
+  .container-portada{
+    height: 550px;
+  }
+
   .container-content-portada{
     display: flex;
     margin: 10px;
@@ -764,10 +778,6 @@ footer{
 }
 
 @media screen and (max-width: 900px) {
-
-  .container-content-portada p{
-    display: none;
-  }
 
   .container-content{
     display: flex;
