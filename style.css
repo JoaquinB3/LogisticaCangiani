@@ -660,6 +660,7 @@ footer{
     border: 0;
     background: transparent;
     gap: .65rem;
+    margin-right: 15px;
   }
 
   /* Estilo para el botón hamburguesa en estado activo */
